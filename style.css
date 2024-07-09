@@ -1,0 +1,164 @@
+.container{
+    text-align: center;
+    position: relative;
+
+}
+h1{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+.string1 {
+  
+    border-bottom: 2px solid;
+    width: 100%;
+   
+}
+
+.string3 {
+ 
+    width: 100%;
+    padding: 10px 20px;
+    border-top: 2px solid;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-top: 30px;
+
+}
+.string2{
+  
+    height: 43%;
+    bottom: 50%;
+    left: 0;
+    top: 28%;
+    width: 96%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   }
+
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+
+.coffeeBox img{
+    width: 190px;
+    height: 190px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    border-radius: 11%;
+
+}
+.coffeeBox{
+    border: 2px solid;
+    height: 247px;
+    width: 204px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    margin-top: 43px;
+    margin-left: 43px;
+
+   
+}
+
+
+.coffeeBox span{
+    margin-top: 17px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.be {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* чтобы текст не переносился */
+    width: 300px; /* задайте ширину контейнера по вашему усмотрению */
+}
+.coffeeBox.loaded {
+    opacity: 1;
+    transform: translateY(0);
+ }
+ .coffeeBox p{
+    margin-left: 203px;
+    font-size: 14px;
+    margin-top: -216px;
+
+
+ }
+
+ .coffeeBox p::before{
+    content: "description: ";
+    font-weight: bold;
+
+ }
+ line{
+    margin-left: 220px;
+    font-size: 14px;
+    width: 70px;
+ }
+ line::before{
+    content:  "Ingridients: ";
+    font-weight: bold;
+ }
+/* .image img{
+    width: 300px;
+    height: 300px;
+}
+
+dialog{
+    position: fixed;
+    top: 20%;
+} */ 
+
+
+
+@media (max-width: 530px){
+    h1{
+        font-size: 30px;
+    }
+    .coffeeBox{
+        height: 191px;
+    width: 152px;
+    }
+    .coffeeBox img{
+        width: 138px;
+        height: 138px;
+    }
+    .coffeeBox p{
+        margin-left: 151px;
+        font-size: 13px;
+        margin-top: -166px;
+    }
+    .coffeeBox span{
+        margin-left: 9px;
+        font-size: 16px;
+    }
+    .coffeeBox line{
+        margin-left: 163px;
+        font-size: 12px;
+        width: 109px;
+    }
+}
